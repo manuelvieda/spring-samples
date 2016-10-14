@@ -1,0 +1,30 @@
+## Hibernate
+spring:
+  jpa:
+    database: postgresql
+    show-sql: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test_db
+    username: test_user
+    password: p4ssw0rd
+    driver-class-name: org.postgresql.Driver
+
+
+## Logging level configuration
+logging:
+  level:
+    root: info
+
+# Spring Boot Application and Actuator configuration
+server:
+  port: 18080
+
+endpoints:
+  enabled: false
+  info:
+    enabled: true
+  health:
+    enabled: true
+management:
+  context-path: /actuator
+
